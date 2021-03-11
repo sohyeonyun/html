@@ -1,0 +1,157 @@
+/* 주석 */
+/* 선택자 : 어떤 요소를 선택해서 스타일을 넣을 것인가? */
+
+/* 태그 : 태그 */
+div {
+    /* 모든 div 태그에 넣고 싶은 스타일 */
+    /* ... */
+}
+
+body {
+    margin: 0;
+}
+
+/* 클래스 : 하나의 종류 */
+.header {
+    /* 모든 header 클래스를 가진 요소에 넣고 싶은 스타일 */
+    display: flex;
+    justify-content: center;
+    height: 54px;
+    border-bottom: 1px solid #adadad;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* 좌우 여백 */
+    align-items: center;            /* 위아래 여백 */
+    width: 975px;
+}
+
+/* 아이디 : 딱 하나 */
+#logo {
+    width: 103px;
+    height: 29px;
+}
+
+.search-box {
+    width: 215px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dadada;
+    background-color: #f5f3f3;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin: 18px;   /* 바깥쪽 여백 <-> padding: 10px; 안쪽 여백*/
+}
+
+.profile-icon {
+    width: 25px;
+    height: 25px;
+    margin: 18px;
+    border-radius: 50%;     /* 11px */
+}
+
+.post {
+    width: 293px;
+    height: 293px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 좌우 여백 */
+    align-items: center;            /* 위아래 여백 */
+    width: 975px;
+}
+
+.post-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 크기 상관없이 똑같이 */
+    gap: 28px;                              /* grid 사이 거리 */
+}
+
+.profile-section {
+    display: flex;
+    width: 975px;
+    margin-top: 30px;
+    margin-bottom: 44px;
+}
+
+.profile-image-wrapper {
+    flex: 1;
+    margin: 0 30px 0 0;   /* 위 오른 아래 왼 */ /*margin-right 해도 됨 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-content-wrapper {
+    flex: 2;
+}
+
+.profile-title-row {
+    display: flex;
+}
+
+.profile-title {
+    font-size: 28px;
+    color: #262626;
+}
+
+.message-button {
+    height: 30px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 0 9px;   /* 위아래 / 좌우 */
+    border: 1px solid rgb(219, 219, 219);
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: 12px;
+}
+
+.profile-info-row {
+    display: flex;
+}
+
+.profile-info-box {
+    display: flex;
+    margin-right: 16px;
+}
+
+.profile-info-text {
+    margin-right: 4px;
+}
+
+.profile-info-number {
+    font-weight: bold;  /* 100 ~ 900 */
+}
+
+.profile-description-row {
+    display: flex;
+}
+
+.profile-description-title {
+    font-weight: 800; /* bold */
+    margin-bottom: 4px;
+}
+
+.profile-description-text {
+
+}

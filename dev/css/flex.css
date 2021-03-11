@@ -1,0 +1,36 @@
+.line{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.line1{
+    display: grid;
+    grid-column-start: 1;
+    grid-template-rows: 1fr 2fr;
+}
+
+.line1-1{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+
+}
+
+.line1-2{
+    display: grid;
+    justify-content: space-around;
+    align-items: row;
+    background-color: blue;
+}
+
+.line2{
+    display: grid;
+    grid-column-start: 2;
+    grid-template-columns: 1fr 2fr;
+}
+
+.line3{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+}
